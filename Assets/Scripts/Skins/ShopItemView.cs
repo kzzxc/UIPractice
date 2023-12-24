@@ -54,4 +54,11 @@ public class ShopItemView : MonoBehaviour, IPointerClickHandler
         _lockImage.gameObject.SetActive(IsLock);
         _priceView.Hide();
     }
+
+    public void Select() => _selectionText.gameObject.SetActive(true);
+    public void UnSelect() => _selectionText.gameObject.SetActive(false);
+
+    public void Highlight() => _backgroundImage.sprite = _highlightBackground;
+
+    public void UnHighlight() => _backgroundImage.sprite = _standardBackground;
 }
