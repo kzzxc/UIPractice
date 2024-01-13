@@ -20,7 +20,7 @@ public class ShopContent : ScriptableObject
         if (characterSkinsDuplicates.Count() > 0)
             throw new InvalidOperationException(nameof(_characterSkinItems));
 
-        var mazeSkinsDuplicates = _mazeSkinItems.GroupBy(item => item.MazeType)
+        var mazeSkinsDuplicates = _mazeSkinItems.GroupBy(item => item.SkinType)
             .Where(array => array.Count() > 1);
 
         if (mazeSkinsDuplicates.Count() > 0)

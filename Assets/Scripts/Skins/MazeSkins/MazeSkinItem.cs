@@ -4,5 +4,5 @@
 public class MazeSkinItem : ShopItem
 {
     [field: SerializeField]
-    public MazeSkins MazeType { get; private set; }  
+    public MazeSkins SkinType { get; private set; }  
 }

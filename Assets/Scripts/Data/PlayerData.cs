@@ -1,6 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 
 public class PlayerData : MonoBehaviour
@@ -22,6 +22,19 @@ public class PlayerData : MonoBehaviour
 
         _openCharacterSkins = new List<CharacterSkins>() { _selectedCharacterSkin };
         _openMazeSkins = new List<MazeSkins>() { _selectedMazeSkin };
+    }
+
+    [JsonConstructor]
+    public PlayerData(int money, CharacterSkins selectedCharacterSkin, MazeSkins selectedMazeSkin,
+        List<CharacterSkins> openCharacterSkins, List<MazeSkins> openMazeSkins)
+    {
+        Money = money;
+
+        _selectedCharacterSkin = selectedCharacterSkin;
+        _selectedMazeSkin = selectedMazeSkin;
+
+        _openCharacterSkins = new List<CharacterSkins>(openCharacterSkins);
+        _openMazeSkins = new List<MazeSkins>(openMazeSkins);
     }
 
     public int Money
@@ -64,4 +77,20 @@ public class PlayerData : MonoBehaviour
     public IEnumerable<CharacterSkins> OpenCharacterSkins => _openCharacterSkins;
 
     public IEnumerable<MazeSkins> OpenMazeSkins => _openMazeSkins;
+
+    public void OpenCharacterSkin(CharacterSkins skin)
+    {
+        if (_openCharacterSkins.Contains(skin))
+            throw new ArgumentException(nameof(skin));
+        
+        _openCharacterSkins.Add(skin);
+    }
+
+    public void OpenMazeSkin(MazeSkins skin)
+    {
+        if (_openMazeSkins.Contains(skin))
+            throw new ArgumentException(nameof(skin));
+        
+        _openMazeSkins.Add(skin);
+    }
 }

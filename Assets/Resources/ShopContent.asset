@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterSkinItems:
   - {fileID: 11400000, guid: 1e383c00a3f7c0c4ea426cd71f622582, type: 2}
+  - {fileID: 11400000, guid: 0f114bdb9aadad546b7284ce63c45672, type: 2}
+  - {fileID: 11400000, guid: 20c558db090a2ca49a1df7cf64ba7544, type: 2}
+  - {fileID: 11400000, guid: 3864bbb0b388d924b8018ee193a2370c, type: 2}
+  - {fileID: 11400000, guid: 4eb8301cd3073f848a0c5f6fe92584b0, type: 2}
+  - {fileID: 11400000, guid: 22c8598b6fe0b0741a02ac1aa3c1064d, type: 2}
   - {fileID: 11400000, guid: ec1e1fc4ee6f1404fb8841fee9d5db4b, type: 2}
+  - {fileID: 11400000, guid: 56f3e086e3182724c919d1d944081c9f, type: 2}
+  - {fileID: 11400000, guid: 2826957201dbc8844b6bf28719b54d54, type: 2}
+  - {fileID: 11400000, guid: 9dbedc1fc9a68f545ba55090e5dca413, type: 2}
   _mazeSkinItems:
   - {fileID: 11400000, guid: b1b92de64ad82aa43ac55e8957adaca8, type: 2}
+  - {fileID: 11400000, guid: 1c23d3733c034b343980ad9f73e90139, type: 2}
+  - {fileID: 11400000, guid: 4bd808436d93a2f408884efdcb897167, type: 2}

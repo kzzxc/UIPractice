@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ff4604b1d1b4f98b9ebc2c26f0cbe61, type: 3}
-  m_Name: Dog
+  m_Name: Bear
   m_EditorClassIdentifier: 
   <Model>k__BackingField: {fileID: 5475500558860850151, guid: 2d924732de3c9c4498249b24e68fd86e, type: 3}
-  <Image>k__BackingField: {fileID: 21300000, guid: 9169288d1b6c7734ab2477b508ac262b, type: 3}
-  <Price>k__BackingField: 1400
-  <SkinType>k__BackingField: 6
+  <Image>k__BackingField: {fileID: 21300000, guid: 761b955158dd15e4a8f15ad596be0776, type: 3}
+  <Price>k__BackingField: 1250
+  <SkinType>k__BackingField: 2
