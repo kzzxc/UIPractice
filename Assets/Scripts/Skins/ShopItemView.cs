@@ -56,7 +56,7 @@ public class ShopItemView : MonoBehaviour, IPointerClickHandler
     }
 
     public void Select() => _selectionText.gameObject.SetActive(true);
-    public void UnSelect() => _selectionText.gameObject.SetActive(false);
+    public void Unselect() => _selectionText.gameObject.SetActive(false);
 
     public void Highlight() => _backgroundImage.sprite = _highlightBackground;
 

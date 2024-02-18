@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+public class PlayerData
 {
     private CharacterSkins _selectedCharacterSkin;
     private MazeSkins _selectedMazeSkin;
